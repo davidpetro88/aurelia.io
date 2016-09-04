@@ -1,0 +1,11 @@
+<template>
+    <h2>${heading}</h2>
+    <h2><a route-href="route: home">Home</a></h2>
+    <h2>${message}</h2>
+    <form method="post" submit.trigger="addContact()">
+        <input type="text" name="name" value.bind="name">
+        <input type="text" name="lastname" value.bind="lastname">
+        <input type="tel" name="telephone" value.bind="telephone">
+        <button type="submit">Add Contact</button>
+    </form>
+</template>
